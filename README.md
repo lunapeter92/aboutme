@@ -8,7 +8,7 @@ This applications purpose is to introduce myself, to include past work experienc
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* Any Links you used as reference
+* https://meyerweb.com/eric/tools/css/reset/ 
 
 ### Reflections and Comments
 * Consider including the answers to your daily journal and submission questions here
