@@ -1,14 +1,22 @@
 body{
-  background-color: gray;
+  background: linear-gradient(black, white);
+  background-blend-mode: lighten;
   font-size: 20px;
-  
+  font-display: block;
+  margin: 0px;
 }
 
 header{
+  position: fixed;
+  border: 2px solid gray;
+  background-color: black;
+  border-radius: 2px;
   text-align: center;
   margin: 1em;
   font-size: larger;
   font-weight: bold;
+  color: white;
+  z-index: 11;
 }
 
 img{
@@ -20,25 +28,33 @@ img{
 }
 
 .container{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  flex: 0 1 auto;
 }
 
 .info, .bio{ 
-  display: inline-block;
+  background-color: #4e5154;
+  border-radius: 10px;
+  position: relative;
   border: 2px solid black;
   margin-bottom: 2em;
   text-align: center;
-  
-  
+  z-index: 10;
+  color: #c6cacf;
+}
+
+.bio{
+  padding: 5px 1em 1em 1em;
 }
 
 .info{
-  width: 25%;
-  /* margin-left: 4em; */
-  padding: 4em;
+  width: 230px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  clear: left;
 }
 
 h2{
@@ -51,8 +67,12 @@ h2{
 
 li{
   margin: 1px;
-  justify-content: left;
-  list-style-type: disc;
+  /* justify-content: left; */
+  padding-bottom: 3px;
+}
+
+ol li{
+  
 }
 
 /* #hobbies{
