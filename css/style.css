@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(black, white);
+  background-image: url(https://cdn.pixabay.com/photo/2020/04/25/03/26/bokeh-5089348_960_720.jpg);
   background-blend-mode: lighten;
   font-size: 20px;
   font-display: block;
@@ -71,9 +71,6 @@ li{
   padding-bottom: 3px;
 }
 
-ol li{
-  
-}
 
 /* #hobbies{
 
