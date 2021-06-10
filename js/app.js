@@ -1,6 +1,6 @@
 'use strict'
 
-
+function userName(){
 let userName = prompt('Welcome! What is your name?');
 console.log(userName);
 while(!userName){
@@ -8,12 +8,13 @@ while(!userName){
   userName = prompt('Welcome! What is your name?');
 }
 alert('Hello ' + userName + ", I'm glad you are here!");
-
+}
+userName();
 
 alert('Let\'s play a guessing game, where you anwser yes or no!');
 
 let correctGuesses = 0;
-
+function questionOne(){
 let goalQuestion = prompt('Do I want to become a Software Engineer?');
 let goalLowerCase = goalQuestion.toLowerCase();
 if(goalLowerCase === 'yes' || goalLowerCase=== 'y'){
@@ -24,7 +25,10 @@ if(goalLowerCase === 'yes' || goalLowerCase=== 'y'){
 }else{
   alert('The input received was not in the correct format!');
 }
+}
+questionOne();
 
+function questionTwo(){
 let showQuestion = prompt('Have you lived in any of the places I have?');
 let showLowercase = showQuestion.toLowerCase();
 if(showLowercase === 'yes' || showLowercase === 'y'){
@@ -35,7 +39,10 @@ if(showLowercase === 'yes' || showLowercase === 'y'){
 }else{
   alert('The input received was not in the correct format!');
 }
+}
+questionTwo();
 
+function questionThree(){
 let workExperience = prompt('Do you know anyone who served in the Army?')
 let workLowercase = workExperience.toLowerCase();
 if(workLowercase === 'yes' || workLowercase === 'y'){
@@ -46,8 +53,10 @@ if(workLowercase === 'yes' || workLowercase === 'y'){
 }else{
   alert('The input received was not in the correct format!');
 }
+}
+questionThree();
 
-
+function questionFour(){
 let family = prompt('Do I have four kids?');
 let familyLowercase = family.toLowerCase();
 if(familyLowercase === 'yes' || familyLowercase === 'y'){
@@ -58,7 +67,10 @@ if(familyLowercase === 'yes' || familyLowercase === 'y'){
 }else{
   alert('The input receieved was not in the correct format!');
 }
+}
+questionFour();
 
+function questionFive(){
 let hobbyQuestion = prompt('Do you enjoy Video Games like I do?');
 let hobbyLowercase = hobbyQuestion.toLowerCase();
 if(hobbyLowercase === 'yes' || hobbyLowercase === 'y'){
@@ -69,7 +81,10 @@ if(hobbyLowercase === 'yes' || hobbyLowercase === 'y'){
 }else{
   alert('The input receieved was not in the correct format!');
 }
+}
+questionFive();
 
+function questionSix(){
 //random number generator
 let randomNumber = Math.floor(Math.random() *100 +1);
 let gameEnded = false;
@@ -94,7 +109,10 @@ while(chances <= 5  && gameEnded === false){
 
   break;
 }
+}
+questionSix();
 
+function questionSeven(){
 let favoriteShows = ['Star Wars', 'The Office', 'It\'s Always Sunny in Philadelphia', 'Game of Thrones', 'The Witcher', 'The Last Kingdom', 'Mythic Quest: Ravens Banquet', 'Brooklyn 99', 'Parks and Recreation', 'Workaholics'];
 
 let attempts = 0;
@@ -113,9 +131,9 @@ while(attempts <= 6 && ended === false){
     }
   }
 }
-
+}
+questionSeven();
 
 alert('Your final score is ' + correctGuesses + '!');
 alert('Thanks for playing my game and visiting my site ' + userName + ' come back real soon now, ya hear?');
-
 
