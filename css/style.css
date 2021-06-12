@@ -70,6 +70,8 @@ li{
   margin: 1px;
   /* justify-content: left; */
   padding-bottom: 3px;
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 
