@@ -1,7 +1,7 @@
 'use strict'
 
 
-function userName(username){
+function userName(){
   let username = prompt('Welcome! What is your name?');
   console.log(username);
   while(!username){
